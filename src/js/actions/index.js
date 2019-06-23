@@ -24,7 +24,8 @@ function shouldFetchIssues(state) {
   return !state.items.length;
 }
 
-export function fetchIssuesIfNeeded() {
+export default function fetchIssuesIfNeeded() {
+// function fetchIssuesIfNeeded() {
   return (dispatch, getState) => {
     if (shouldFetchIssues(getState())) {
       return dispatch(fetchIssues());

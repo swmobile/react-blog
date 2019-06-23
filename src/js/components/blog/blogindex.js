@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
 import { connect } from 'react-redux';
-import { fetchIssuesIfNeeded } from '../../actions/index';
+// import { fetchIssuesIfNeeded } from '../../actions/index';
+import fetchIssuesIfNeeded from '../../actions/index';
 import ArticleArea from './articlearea';
 import RightSider from './rightsider';
 

@@ -16,8 +16,10 @@ export default class Navigation extends React.Component {
     const menu = [];
     const patt = /(#+)\s+?(.+)/g;
     let result = null;
-    while ((result = patt.exec(issues))) {
+    result = patt.exec(issues);
+    while (result) {
       menu.push({ level: result[1].length, title: result[2] });
+      result = patt.exec(issues);
     }
     const menuObj = [];
     let level2Temp = null;
