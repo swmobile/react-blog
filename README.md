@@ -1,3 +1,7 @@
+Change log:
+1. npm install
+2. npx webpack
+
 # React-Blog
 
 学习React全家桶，计划写一个博客。
